@@ -11,9 +11,11 @@ public class characterMotion : MonoBehaviour
 		public int life = 2;
 		public respawnPoint respawn;
 		public float counter = 0.1f;
+		TextMesh lives;
 	
 	void Start()
 	{ 
+		lives = gameObject.GetComponentInChildren<TextMesh>();
 	}
 		
 		// Update is called once per frame
@@ -33,7 +35,7 @@ public class characterMotion : MonoBehaviour
 			life = 2;
 		}
 		
-		GameObject.FindObjectOfType<TextMesh>().text = life.ToString();
+		lives.text = life.ToString();
 	}
 
 	void FixedUpdate (){
