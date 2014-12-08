@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 839249eb679d7774f9c27c1088e028d5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy_1
+    21300002: Enemy_2
+    21300004: Enemy_3
+    21300006: Enemy_4
+    21300008: Enemy_5
+    21300010: Player_1
+    21300012: Player_2
+    21300014: Player_3
+    21300016: Player_4
+    21300018: Player_5
+    21300020: enemy_1
+    21300022: enemy_2
+    21300024: enemy_3
+    21300026: enemy_4
+    21300028: enemy_5
+    21300030: Portal_1
+    21300032: Portal_2
+    21300034: Portal_3
+    21300036: Portal_4
+    21300038: Portal_5
+    21300040: Wall_1
+    21300042: Wall_2
+    21300044: Wall_3
+    21300046: Wall_4
+    21300048: Wall_5
+    21300050: Lava_1
+    21300052: Lava_2
+    21300054: Lava_3
+    21300056: Lava_4
+    21300058: Lava_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2835
+        width: 216
+        height: 263
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2818
+        width: 184
+        height: 276
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 2827
+        width: 196
+        height: 243
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 2834
+        width: 189
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 2838
+        width: 203
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2380
+        width: 119
+        height: 187
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_2
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 2386
+        width: 103
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_3
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 2383
+        width: 90
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_4
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 2386
+        width: 103
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_5
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2403
+        width: 96
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2035
+        width: 251
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy_2
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 2035
+        width: 274
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy_3
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2025
+        width: 277
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy_4
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 2032
+        width: 258
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy_5
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 2035
+        width: 254
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portal_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1536
+        width: 190
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portal_2
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1523
+        width: 255
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portal_3
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1536
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portal_4
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1539
+        width: 297
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portal_5
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1548
+        width: 239
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wall_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1078
+        width: 129
+        height: 255
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wall_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1081
+        width: 111
+        height: 252
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wall_3
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1093
+        width: 110
+        height: 233
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wall_4
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1084
+        width: 113
+        height: 229
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wall_5
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 1097
+        width: 123
+        height: 213
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lava_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 714
+        width: 322
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lava_2
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 714
+        width: 296
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lava_3
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 694
+        width: 313
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lava_4
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 685
+        width: 307
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lava_5
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 691
+        width: 313
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
