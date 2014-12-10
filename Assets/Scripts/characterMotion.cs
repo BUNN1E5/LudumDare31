@@ -11,6 +11,7 @@ public class characterMotion : MonoBehaviour
 		public int life = 2;
 		public respawnPoint respawn;
 		public float counter = 0.1f;
+		public bool paused = false;
 		TextMesh lives;
 	
 	void Start()
@@ -35,9 +36,56 @@ public class characterMotion : MonoBehaviour
 			life = 2;
 		}
 		
+		
 		lives.text = life.ToString();
+		
+		if(Input.GetKeyDown("escape"))
+		{
+			paused = !paused;
+		}
 	}
-
+	
+	void OnGUI() 
+	{
+		if (paused == true)
+		{
+			counter = 0;
+			Time.timeScale = 0F;
+			GUI.Label(new Rect(13, 10, 180, 90), "Game paused");
+			if (GUI.Button(new Rect(10, 30, 90, 30), "Restart"))
+			{
+				Application.LoadLevel(Application.loadedLevel);
+			}
+			
+			if (GUI.Button(new Rect(10, 60, 90, 30), "Mute"))
+			{
+				audio.mute = true;
+			}
+			else if (GUI.Button(new Rect(110, 60, 90, 30), "Un-Mute"))
+			{
+				audio.mute = false;
+			}
+			
+			if (GUI.Button(new Rect(10, 90, 90, 30), "Quit"))
+			{
+				Application.Quit();
+			}
+		}
+		else
+		{
+			if(paused == false && counter == 0)
+			{
+				Time.timeScale = 1;
+				counter = 1;
+			}
+		}
+	}
+	
+	void OnApplicationPause(bool pauseStatus) 
+	{
+		paused = pauseStatus;
+	}
+	
 	void FixedUpdate (){
 		if(hasJumped){
 			rigidbody2D.AddForce(transform.up*jumpPower);
@@ -57,29 +105,24 @@ public class characterMotion : MonoBehaviour
 		if(other.transform.tag == "Enemy")
 		{
 			life--;
+			rigidbody2D.AddForce(Vector2.right * 50);
+			rigidbody2D.AddForce(Vector2.up * 50);
 		}
 	}
 	
 	void OnCollisionExit2D(Collision2D other)
 	{	
-		this.transform.parent = lastObject.transform.parent;
+		this.transform.parent = lastObject.transform.parent.parent;
 	}
 	
-	void OnTriggerStay2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.transform.tag == "Lava")
 		{
-			counter-= Time.deltaTime;
-			if(counter <= 0)
-			{
-				transform.position = respawn.position;
-				counter = 0.1f;
-				life = 2;
-			}
-		}
-		else
-		{
+
+			transform.position = respawn.position;
 			counter = 0.1f;
+			life = 2;
 		}
 	}
 }

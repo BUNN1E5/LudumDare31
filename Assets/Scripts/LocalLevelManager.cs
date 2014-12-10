@@ -9,7 +9,7 @@ public class LocalLevelManager : MonoBehaviour {
 	public bool levelEnded;
 	
 	public Component[] Platforms;
-	public Component[] Enemies;
+	public EnemyAI[] Enemies;
 	
 	public Collider2D[] colliders;
 	
@@ -19,6 +19,7 @@ public class LocalLevelManager : MonoBehaviour {
 		Platforms = GetComponentsInChildren<MovingPlatform>();
 		rigidbodyObjects = gameObject.GetComponentsInChildren<Rigidbody2D>();
 		colliders = gameObject.GetComponentsInChildren<Collider2D>();
+		Enemies = gameObject.GetComponentsInChildren<EnemyAI>();
 	}
 	
 	// Update is called once per frame
@@ -37,11 +38,8 @@ public class LocalLevelManager : MonoBehaviour {
 	
 	void endLevel()
 	{
-		for(int i = 0; i < rigidbodyObjects.Length; i++)
-		{
-			Destroy(rigidbodyObjects[i]);
-		}
-		Destroy(this, 8f);
+
+		Destroy(this.gameObject, 3f);
 		transform.Translate(Vector2.right * 5 *  Time.deltaTime);
 	}
 	
@@ -52,7 +50,7 @@ public class LocalLevelManager : MonoBehaviour {
 			platform.enabled = true;
 		}
 		
-		foreach(EnemyBehaviour enemy in Enemies)
+		foreach(EnemyAI enemy in Enemies)
 		{
 			enemy.enabled = true;
 		}
